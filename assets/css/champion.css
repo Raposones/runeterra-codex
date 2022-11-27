@@ -1,0 +1,178 @@
+.champion {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: 200ms ease;
+    filter: grayscale(100%);
+    cursor: pointer;
+    box-shadow: 3px 3px 4px black;
+}
+
+.champion:active{
+    box-shadow: 1px 1px 1px rgb(54, 53, 53);
+}
+
+.champion:hover{
+    filter: grayscale(0%);
+}
+
+.champion .classList {
+    width: 100%;
+}
+
+.champion .classList .classes {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.champion .classList .classes .classIcon {
+    max-width: 100%;
+    width: 2rem;
+}
+
+.champion .skills {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0.2rem;
+    margin: 1rem;
+}
+
+.champion .skills img {
+    height: 2.5rem;
+    padding: 0.25rem;
+    align-items: left;
+}
+
+.champion .icon {
+    max-width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.champion .name {
+    font-size: x-large;
+    font-weight: bold;
+    color: #fff;
+}
+
+.champion .title {
+    color: rgb(239, 227, 227);
+}
+
+.champion .desc {
+    color: #fff;
+    padding: 0.5rem;
+    margin: -0.4rem;
+}
+
+
+.champion .skills .passive {
+    height: 1.7rem;
+    margin-top: 0.42rem;
+}
+
+
+.BandleCity {
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.284) 50%, rgba(5, 7, 23, 0.632) 100%), url(/resources/regions/BandleCity.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.Bilgewater {
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(/resources/regions/BilgeWater.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Demacia {
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(/resources/regions/Demacia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.Ionia {
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(/resources/regions/Ionia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.Ixtal {
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(/resources/regions/Ixtal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.Noxus {
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(/resources/regions/Noxus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Piltover {
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(/resources/regions/Piltover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ShadowIsles {
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(/resources/regions/ShadowIsles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Shurima {
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(/resources/regions/Shurima.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.Targon {
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(/resources/regions/Targon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.Freljord {
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(/resources/regions/Freljord.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Void {
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(/resources/regions/Void.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Zaun {
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(/resources/regions/Zaun.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Runeterra{
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(/resources/regions/Runeterra.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

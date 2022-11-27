@@ -1,0 +1,255 @@
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    visibility: hidden;
+    opacity: 0;
+    overflow: auto;
+}
+
+.modal-container.show{
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal{
+    min-width: 500px;
+    width: 80vw;
+    height: 80vh;
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    border: 2px solid rgb(164, 124, 24);
+    box-shadow: 0 0 0 2px rgb(84, 84, 1);
+}
+
+
+.show .modal{
+    opacity: 1;
+}
+
+.closeButton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width:68px;
+    height: 40px;
+    color: #fff;
+    background: rgb(93,9,7);
+    background: linear-gradient(184deg, rgba(93,9,7,1) 0%, rgba(148,25,8,1) 59%, rgba(210,7,7,1) 100%);
+    border: 2px solid rgb(159, 137, 12);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0 2px rgb(95, 70, 9);
+}
+
+.closeButton:active{
+    filter: brightness(0.7);
+    border:rgb(95, 70, 9);
+}
+
+.modal .champHeader{
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modal .champHeader .headerLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height:100%;
+    
+}
+
+.modal .champHeader .headerRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+    height:100%;
+}
+
+.modal #iconDiv{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.modal #icon{
+    width: 6rem;
+    max-height: 100%;
+    min-width: 50%;
+}
+
+.modal #name{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+}
+
+.modal #title{
+    color: rgb(183, 181, 178);
+    font-size: 18px;
+    text-align: center;
+}
+
+.modal .details{
+    width: 100%;
+    height: 100%;
+    background: rgb(6,6,34);
+    background: linear-gradient(0deg, rgba(6,6,34,0.8715861344537815) 0%, rgba(8,8,42,0.6446953781512605) 59%, rgba(11,8,46,0.11528361344537819) 100%);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.modal #class{
+    font-size: x-large;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.modal  #region{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    font-size: x-large;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.modal #region img{
+    height: 30px;
+}
+
+.modal .details img{
+    height: 30px;
+}
+
+.modal .details #desc{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#BandleCity{
+    background: rgb(6,105,30);
+    background: linear-gradient(0deg, rgba(6,105,30,1) 0%, rgba(5,37,24,1) 59%, rgba(7,96,54,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(2);
+}
+#Bilgewater{
+    background: rgb(77,190,104);
+    background: linear-gradient(0deg, rgba(77,190,104,1) 0%, rgba(21,180,127,1) 59%, rgba(14,133,99,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#Demacia{
+    background: rgb(206,217,209);
+    background: linear-gradient(0deg, rgba(206,217,209,1) 0%, rgba(85,91,89,1) 59%, rgba(166,175,171,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(2);
+}
+#Ionia{
+    background: rgb(241,135,181);
+background: linear-gradient(0deg, rgba(241,135,181,1) 0%, rgba(235,168,234,1) 59%, rgba(247,64,231,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(1.2);
+}
+#Ixtal{
+    background: rgb(37,205,14);
+    background: linear-gradient(0deg, rgba(37,205,14,1) 0%, rgba(23,154,17,1) 59%, rgba(26,195,62,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(2);
+}
+#Noxus{
+    background: rgb(207,77,12);
+    background: linear-gradient(0deg, rgba(207,77,12,1) 0%, rgba(98,32,5,1) 59%, rgb(214, 89, 43) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(2);
+}
+#Piltover{
+    background: rgb(215,195,33);
+    background: linear-gradient(0deg, rgba(215,195,33,1) 0%, rgba(129,101,8,1) 59%, rgba(170,150,21,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(1.5);
+}
+#ShadowIsles{
+    background: rgb(28,78,51);
+    background: linear-gradient(0deg, rgb(59, 146, 100) 0%, rgba(12,75,52,1) 59%, rgb(49, 133, 101) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(2);
+}
+#Shurima{
+    background: rgb(241,246,13);
+    background: linear-gradient(0deg, rgba(241,246,13,1) 0%, rgba(203,203,18,1) 59%, rgba(240,254,24,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(4);
+}
+#Targon{
+    background: rgb(221,206,196);
+    background: linear-gradient(0deg, rgba(221,206,196,1) 0%, rgba(196,211,221,1) 59%, rgba(146,147,184,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(1.4);
+}
+#Freljord{
+    background: rgb(93,210,241);
+    background: linear-gradient(0deg, rgba(93,210,241,1) 0%, rgba(68,167,233,1) 59%, rgba(66,72,240,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(2);
+}
+#Void{
+    background: rgb(196,63,191);
+    background: linear-gradient(0deg, rgba(196,63,191,1) 0%, rgba(186,50,162,1) 59%, rgba(214,43,193,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(1);
+}
+#Zaun{
+    background: rgb(77,143,22);
+    background: linear-gradient(0deg, rgba(77,143,22,1) 0%, rgba(116,176,29,1) 59%, rgba(79,125,8,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(1.8);
+}
+#Runeterra{
+    background: rgb(215,219,155);
+    background: linear-gradient(0deg, rgba(215,219,155,1) 0%, rgba(232,231,134,1) 59%, rgba(251,237,142,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(1.5);
+}
+
