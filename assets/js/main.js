@@ -1,12 +1,25 @@
 const champList = document.getElementById('championList')
+let chunkIndex = 0
+const loading = document.getElementById('loading')
 
-function showChampion() {
-	getAPI.getChampions().then((champions = []) => {
-		const newHTML = champions.map(champion => `
+function getChampionsList(chunkInd){
+	getAPI.getChampions()
+	.then(fullList => fullList[chunkInd].map(champ => {
+		var champName = Object.keys(champ)[0]
+            const details = getAPI.getChampionDetails(champName)
+            return details
+	}))
+	.then(detailRequest => Promise.all(detailRequest))
+	.then(champDetails => champDetails.map(showChampion))
+	.catch(err => console.log(err))
+}
+
+function showChampion(champion) {
+ 		const newHTML = `
 		<li onclick=showDetails('${champion.name}') class="champion ${champion.region}">
 			<div class="classList">
 				<ol class="classes">
-					${champion.class.map(roleClass => `<li><img class="classIcon" src="resources/class/${roleClass}.webp" alt="class"></li>`)}
+					${champion.class.map(roleClass => `<li><img class="classIcon" src="resources/class/${roleClass}.webp" alt="class"></li>`).join('')}
 				</ol>
 			</div>
 			<div class="iconDiv">
@@ -21,12 +34,9 @@ function showChampion() {
 					<li><img src="resources/spell/${champion.skills[3]}" alt="E"></li>
 					<li><img src="resources/spell/${champion.skills[4]}" alt="R"></li>
 				</ol>
-		</li>`).join('')
-		champList.innerHTML += newHTML
-	})
+		</li>`
+		champList.innerHTML += newHTML 
 }
-
-showChampion()
 
 function showDetails(champDets) {
 	getAPI.getChampionDetails(champDets).then(champion => {
@@ -53,3 +63,22 @@ function showDetails(champDets) {
 		})
 	})
 }
+
+getChampionsList(chunkIndex)
+
+addEventListener('scroll', e => {
+
+	if (chunkIndex < 10){
+		 if (window.innerHeight + Math.round(window.pageYOffset) === document.documentElement.scrollHeight){
+			chunkIndex++
+			getChampionsList(chunkIndex)
+		}
+	}
+	else{
+		loading.innerHTML = ' '
+	}
+})
+
+
+
+

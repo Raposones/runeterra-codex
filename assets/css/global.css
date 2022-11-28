@@ -3,8 +3,9 @@
     box-sizing: border-box;
 }
 
+
 body {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(128, 126, 126, 0.9) 100%), url(resources/bg-image-lol.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(128, 126, 126, 0.9) 100%), url(../../resources/bg_image_lol.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -16,6 +17,12 @@ h1{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#loading{
+    color: #fff;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 .content{

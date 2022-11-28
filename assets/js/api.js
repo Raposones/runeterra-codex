@@ -46,13 +46,22 @@ getAPI.getChampions = () => {
         .then(response => response.json())
         .then(jsonBody => jsonBody.data)
         .then(champsDict => Object.entries(champsDict).map(([key, value]) => ({ [key]: value })))
-        .then(champs => champs.map(champ => {
+        .then(champs => {
+            var chunks = []
+            var chunkSize = 16
+            for (let i = 0; i < champs.length; i += chunkSize) {
+                const chunk = champs.slice(i, i + chunkSize);
+                chunks.push(chunk);
+             }
+            return chunks
+        })
+            /* champs.map(champ => {
             var champName = Object.keys(champ)[0]
             const details = getAPI.getChampionDetails(champName)
             return details
         }))
         .then(detailRequest => Promise.all(detailRequest))
-        .then(champDetails => champDetails) 
+        .then(champDetails => champDetails)  */
         .catch(err => console.error(err));
 }
 

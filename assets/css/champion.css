@@ -78,7 +78,7 @@
 
 
 .BandleCity {
-    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.284) 50%, rgba(5, 7, 23, 0.632) 100%), url(resources/regions/BandleCity.jpg);
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.284) 50%, rgba(5, 7, 23, 0.632) 100%), url(../../resources/regions/BandleCity.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -86,14 +86,14 @@
 }
 
 .Bilgewater {
-    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(resources/regions/BilgeWater.jpg);
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(../../resources/regions/BilgeWater.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .Demacia {
-    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(resources/regions/Demacia.jpg);
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(../../resources/regions/Demacia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -101,77 +101,77 @@
 }
 
 .Ionia {
-    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(resources/regions/Ionia.jpg);
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(../../resources/regions/Ionia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom right;
 }
 
 .Ixtal {
-    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(resources/regions/Ixtal.jpg);
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(../../resources/regions/Ixtal.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
 }
 
 .Noxus {
-    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(resources/regions/Noxus.jpg);
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(../../resources/regions/Noxus.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .Piltover {
-    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(resources/regions/Piltover.jpg);
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(../../resources/regions/Piltover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .ShadowIsles {
-    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(resources/regions/ShadowIsles.jpg);
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(../../resources/regions/ShadowIsles.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .Shurima {
-    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(resources/regions/Shurima.jpg);
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(../../resources/regions/Shurima.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
 }
 
 .Targon {
-    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(resources/regions/Targon.jpg);
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(../../resources/regions/Targon.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
 }
 
 .Freljord {
-    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(resources/regions/Freljord.jpg);
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(../../resources/regions/Freljord.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .Void {
-    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(resources/regions/Void.jpg);
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(../../resources/regions/Void.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .Zaun {
-    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(resources/regions/Zaun.jpg);
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(../../resources/regions/Zaun.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .Runeterra{
-    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(resources/regions/Runeterra.jpg);
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(../../resources/regions/Runeterra.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
