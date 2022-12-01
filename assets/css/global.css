@@ -3,6 +3,14 @@
     box-sizing: border-box;
 }
 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
 
 body {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(128, 126, 126, 0.9) 100%), url(../../resources/bg_image_lol.jpg);
@@ -12,12 +20,118 @@ body {
 }
 
 h1{
+    text-align: center;
     font-size: 72px;
     background: -webkit-linear-gradient(rgb(217, 180, 18), rgb(109, 110, 13));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 400px;
+    margin: 150px;
+    padding: 10px;
+}
+
+.filter-text{
+    color: #fff;
+    font-size: xx-large;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.filter .class-filter{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.filter .class-filter .class-button{
+    height: 40px;
+    width: 160px;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 1rem;
+    background: linear-gradient(94deg, rgba(78,84,99,1) 0%, rgba(97,93,115,1) 59%, rgba(113,110,134,1) 100%);
+    color: #fff;
+    transition: .1s;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    box-shadow: 2px 2px 2px black;
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+
+.filter .region-filter{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.filter .region-filter .region-button{
+    height: 40px;
+    width: 160px;
+    font-size: x-large;
+    text-align: middle;
+    border-radius: 1rem;
+    background: linear-gradient(94deg, rgba(78,84,99,1) 0%, rgba(97,93,115,1) 59%, rgba(113,110,134,1) 100%);
+    color: #fff;
+    transition: .1s;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    box-shadow: 3px 3px 3px black;
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+
+
+.filter .region-filter .region-button:hover{
+    filter: brightness(1.2);
+}
+
+.filter .region-filter .region-button:active{
+    filter: brightness(0.8);
+    box-shadow: 1px 1px 1px black;
+}
+
+.filter .class-filter .class-button:hover{
+    filter: brightness(1.2);
+}
+
+.filter .class-filter .class-button:active{
+    filter: brightness(0.8);
+    box-shadow: 1px 1px 1px black;
+}
+
+.filter .show-all{
+    height: 50px;
+    width: 300px;
+    border-radius: 1rem;
+    font-size: xx-large;
+    margin: 20px;
+    background: linear-gradient(94deg, rgba(52,100,218,1) 0%, rgba(93,69,198,1) 59%, rgba(47,34,135,1) 100%);
+    color: #fff;
+    box-shadow: 3px 3px 3px black;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    filter: brightness(0.9);
+    transition: .1s;
+    cursor: pointer;
+}
+
+.filter .show-all:hover{
+    filter: brightness(1.2);
+}
+
+.filter .show-all:active{
+    filter: brightness(0.8);
+    box-shadow: 1px 1px 1px black;
+}
+
 
 #loading{
     color: #fff;
@@ -40,6 +154,34 @@ h1{
     padding: 0;
 }
 
+.pagination{
+    width: 100%;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#load-more{
+    padding: 0.7em 2em;
+    color: #fff;
+    font-size: 1.3em;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    text-shadow: 3px 3px 4px #333;
+    background: linear-gradient(94deg, rgba(52,100,218,1) 0%, rgba(93,69,198,1) 59%, rgba(47,34,135,1) 100%);
+    cursor: pointer;
+    transition: .1s;
+}
+
+#load-more:hover{
+    filter: brightness(1.2);
+}
+
+#load-more:active{
+    filter: brightness(0.8);
+}
 
 
 @media screen and (min-width: 992px) {

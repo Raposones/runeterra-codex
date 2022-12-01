@@ -60,31 +60,7 @@
     border:rgb(95, 70, 9);
 }
 
-.modal .champHeader{
-    width: 100%;
-    height: 60%;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-.modal .champHeader .headerLeft{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
-    height:100%;
-    
-}
-
-.modal .champHeader .headerRight{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 60%;
-    height:100%;
-}
 
 .modal #iconDiv{
     margin-bottom: 1rem;
@@ -94,13 +70,13 @@
 }
 
 .modal #icon{
-    width: 6rem;
+    width: 10rem;
     max-height: 100%;
     min-width: 50%;
 }
 
 .modal #name{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bolder;
     color: #fff;
     text-align: center;
@@ -108,7 +84,7 @@
 
 .modal #title{
     color: rgb(183, 181, 178);
-    font-size: 18px;
+    font-size: 28px;
     text-align: center;
 }
 
@@ -120,39 +96,37 @@
     padding: 5px;
     display: flex;
     flex-direction: column;
-    
+    flex: 1;
 }
 
 .modal #class{
-    font-size: x-large;
+    font-size: 25px;
     font-weight: 500;
     color: #fff;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .modal  #region{
     display: flex;
     flex-direction: row;
     color: #fff;
-    font-size: x-large;
+    font-size: 30px;
     font-weight: bold;
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
 .modal #region img{
     height: 30px;
 }
 
-.modal .details img{
-    height: 30px;
-}
 
-.modal .details #desc{
-    font-size: 1.3rem;
+.modal  #desc{
+    font-size: 28px;
     font-weight: 500;
     color: #fff;
-    padding: 10px;
-    text-align: center;
+    margin: 50px;
+    position: absolute;
+    bottom: 0;
 }
 
 #BandleCity{

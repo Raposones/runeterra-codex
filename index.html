@@ -27,13 +27,35 @@
 </head>
 
 <body>
+    <h1 id="teste">Runeterra Codex</h1>
+
+
+    <section class="filter">
+        <span  class="filter-text">Filter by class: </span>
+        <ol class="class-filter"></ol>
+
+        <hr>
+
+        <span  class="filter-text">Filter by region: </span>
+        <ol class="region-filter"></ol>
+
+        <hr>
+
+
+        <button type="button" class="show-all">Show all</button>
+    </section>
 
     <section class="content">
-        <h1 id="teste">Runeterra Codex</h1>
 
         <ol class="champions" id="championList">
         </ol>
-        <span id="loading">Loading...</span>
+
+        <hr> 
+        
+        <div class="pagination">
+            <button type="button" id="load-more">Load more</button>
+        </div>
+        
     </section>
 
     <div id="modal-details" class="modal-container">
@@ -46,12 +68,7 @@
             <div id="region">
                      
             </div>
-            <br><br>
-            <div class="details">
-
-
-                <span id="desc"></span>
-            </div>
+            <span id="desc"></span>
         </div>
     </div>
 

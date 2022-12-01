@@ -3,9 +3,9 @@
     display: flex;
     flex-direction: column;
     margin: .5rem;
-    padding: 1rem;
+    padding: .5rem;
     border-radius: 1rem;
-    transition: 200ms ease;
+    transition: 200ms;
     filter: grayscale(100%);
     cursor: pointer;
     box-shadow: 3px 3px 4px black;
@@ -86,7 +86,7 @@
 }
 
 .Bilgewater {
-    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(../../resources/regions/Bilgewater.jpg);
+    background-image: linear-gradient(to bottom, rgba(7, 11, 37, 0.681) 50%, rgba(5, 7, 23, 0.7) 100%), url(../../resources/regions/BilgeWater.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

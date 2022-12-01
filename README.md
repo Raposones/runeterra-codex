@@ -47,3 +47,11 @@ O projeto está todo em inglês por questões de aprendizado.
 - Menos conteúdo carregado ao iniciar a página, disponibilizando conteúdo mais rapidamente
 
 - Agora são carregados 15 campeões por vez: 15 no começo + 15 a cada final da lista
+
+### -> 0.3
+
+- Adicionados novos filtros: agora é possível filtrar por classe ou por região!
+
+- O carregamento de campeões, além dos 15 iniciais, agora é feito ao clicar no botão no final da página
+
+{WIP}
