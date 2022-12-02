@@ -32,7 +32,13 @@ Este projeto é baseado nas aulas do bootcamp **Orange Tech +** da plataforma DI
 
 Originalmente, o projeto seria uma pokédex (é o que se pede na entrega do projeto, afinal). Porém, para expandir meus conhecimentos e testar uma API nova, tentei utilizar uma API de algo diferente. League of Legends é um dos meus jogos favoritos, e, além disto, fornece uma API completa, possibilitando o desenvolvimento da Runeterra Codex.
 
-O projeto está todo em inglês por questões de aprendizado.
+Algumas implementações, como os filtros e pesquisas, foram baseados nos seguintes projetos de Pokédex:
+
+  - https://4l1c3-r4bb1t.github.io/pokedex/
+  
+  - https://nathanlafere.github.io/js-developer-pokedex/poke.html
+  
+Meus sinceros agradecimentos aos autores, os projetos estão ótimos e muito bem feitos! :)
 
 <br>
 
