@@ -87,8 +87,7 @@ getAPI.getChampionDetails = (champName, classFilter = '', regionFilter = '') => 
         .then(champDetail => champDetail.data[champName])
         .then(details => ChampionJsonToObject(details, classFilter, regionFilter))
         .catch(err => {
-            if (champName = '') alert('Invalid search!')
-            else alert(`${champName} is not a LoL champion!`)
+            alert("Champion not found!")
         })
 }
 
