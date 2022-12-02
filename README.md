@@ -1,5 +1,7 @@
 # Runeterra Codex
 
+https://raposones.github.io/runeterra-codex/
+
 ## Sobre
 A **Runeterra Codex** fornece uma descrição rápida de todos os personagens do jogo League of Legends, diretamente da API oficial da Riot Games!
 
