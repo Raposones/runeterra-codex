@@ -144,8 +144,14 @@ loadMore.addEventListener('click', e => {
 search.addEventListener('keypress', e =>{
 	if (e.key === 'Enter') {
 		var string = search.value.trim()
+		if (string === ''){
+			alert('Invalid search!')
+		}
+		else {
 		string = string.charAt(0).toUpperCase() + string.slice(1)
-		showDetails(string.charAt(0).toUpperCase() + string.slice(1).toLowerCase())}
+		showDetails(string.charAt(0).toUpperCase() + string.slice(1).toLowerCase())
+		}
+	}
 })
 
 
