@@ -4,6 +4,7 @@ const classFilter = document.querySelector('.filter .class-filter')
 const regionFilter = document.querySelector('.filter .region-filter')
 const filter = document.querySelector('.filter')
 const loadMore = document.getElementById('load-more')
+const search = document.getElementById('search')
 
 const classList = ['Assassin', 'Fighter', 'Mage', 'Marksman', 'Support', 'Tank']
 const regionList = ['BandleCity', 'Bilgewater', 'Demacia', 'Ionia', 'Ixtal', 'Noxus', 'Piltover', 'ShadowIsles', 'Shurima', 'Targon', 'Freljord', 'Void', 'Zaun', 'Runeterra']
@@ -138,6 +139,13 @@ filter.addEventListener('click', e =>{
 loadMore.addEventListener('click', e => {
 	chunkIndex++
 	getChampionsList(chunkIndex)
+})
+
+search.addEventListener('keypress', e =>{
+	if (e.key === 'Enter') {
+		var string = search.value.trim()
+		string = string.charAt(0).toUpperCase() + string.slice(1)
+		showDetails(string.charAt(0).toUpperCase() + string.slice(1).toLowerCase())}
 })
 
 

@@ -54,4 +54,8 @@ O projeto está todo em inglês por questões de aprendizado.
 
 - O carregamento de campeões, além dos 15 iniciais, agora é feito ao clicar no botão no final da página
 
-{WIP}
+### -> 0.4
+
+- Pesquisa adicionada: ao pesquisar na caixa (e apertar Enter), irá aparecer diretamente o cartão de lore do campeão pesquisado.
+
+- Fixes pequenos de espaçamento e imagens

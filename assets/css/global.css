@@ -22,10 +22,42 @@ body {
 h1{
     text-align: center;
     font-size: 72px;
-    background: -webkit-linear-gradient(rgb(217, 180, 18), rgb(109, 110, 13));
+    background: -webkit-linear-gradient(rgb(217, 180, 18), rgb(144, 146, 17));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: brightness(1.2);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#search{
+    height: 3em;
+    width: 35%;
+    padding: 15px;
+    border-radius: .7rem;
+    background: url(../../resources/lupa.png) no-repeat right;
+    background-size: 30px;
+    background-position: 95% 50%;
+    border-color: #fff;
+    color: #fff;
+    transition: .2s;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+#search::placeholder{
+    color: azure;
+    filter: opacity(0.7);
+}
+
+#search:focus{
+    border-radius: 1rem;
 }
 
 .filter{
@@ -33,13 +65,14 @@ h1{
     flex-direction: column;
     width: 70%;
     height: 400px;
-    margin: 150px;
-    padding: 10px;
+    margin: 20px;
+    padding: 0px;
+    margin-bottom: 100px;
 }
 
 .filter-text{
     color: #fff;
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 600;
     margin-left: 20px;
 }
@@ -54,8 +87,8 @@ h1{
 
 .filter .class-filter .class-button{
     height: 40px;
-    width: 160px;
-    font-size: x-large;
+    width: 130px;
+    font-size: large;
     text-align: center;
     border-radius: 1rem;
     background: linear-gradient(94deg, rgba(78,84,99,1) 0%, rgba(97,93,115,1) 59%, rgba(113,110,134,1) 100%);
@@ -76,8 +109,8 @@ h1{
 
 .filter .region-filter .region-button{
     height: 40px;
-    width: 160px;
-    font-size: x-large;
+    width: 130px;
+    font-size: large;
     text-align: middle;
     border-radius: 1rem;
     background: linear-gradient(94deg, rgba(78,84,99,1) 0%, rgba(97,93,115,1) 59%, rgba(113,110,134,1) 100%);
@@ -109,10 +142,10 @@ h1{
 }
 
 .filter .show-all{
-    height: 50px;
-    width: 300px;
+    height: 60px;
+    width: 250px;
     border-radius: 1rem;
-    font-size: xx-large;
+    font-size: x-large;
     margin: 20px;
     background: linear-gradient(94deg, rgba(52,100,218,1) 0%, rgba(93,69,198,1) 59%, rgba(47,34,135,1) 100%);
     color: #fff;
